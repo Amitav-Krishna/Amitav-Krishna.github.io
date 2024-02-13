@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <p><img ></p>
+    <title>STEM Success Tutoring | Norfolk & Haldimand County</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .header { background-color: #4CAF50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        position: relative; /* Added for positioning the button */
+ }
+        .content { padding: 20px; }
+        h2 { color: #333; }
+        p { line-height: 1.6; }
+         }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>STEM Success Tutoring</h1>
+    <p>Read our STEM blogs!</p>
+    <<!-- Link to the blog page -->
+</div>
+
+<div class="content">
+  
+
+
+
+    <h2>Our Blogs:</h2>
+    <ul>
+        <li>a href="/Blogs/ant-communication" >The Intricacies of Ant Communication</a> </li>
+  
+    </ul>
+
+    </div>
+
+</body>
