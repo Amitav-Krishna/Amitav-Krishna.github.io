@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Number Criteria with Python - By Kmitav Arishna</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://example.com/background.jpg');
+        }
+        .blog-header {
+            margin-bottom: 20px;
+        }
+        .blog-title, .sub-header {
+            color: #333;
+        }
+        .blog-title {
+            font-size: 24px;
+        }
+        .sub-header {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .blog-meta {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .blog-content {
+            text-align: justify;
+        }
+        .blog-content p, .blog-content pre {
+            line-height: 1.6;
+        }
+        .blog-content pre {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f4f4;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        .blog-content img {
+            float: right;
+            margin-left: 20px;
+            width: 300px; /* Adjust as necessary */
+        }
+        .back-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 20px 0;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .clear-float {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<div class="blog-header">
+    <h1 class="blog-title">Exploring Number Criteria with Python</h1>
+    <div class="blog-meta">By Kmitav Arishna</div>
+</div>
+
+<div class="blog-content">
+    <h2 class="sub-header">Introduction</h2>
+    <p>I recently came across an interesting math problem. In it, you had to find out how many numbers fit a bunch of different criteria. I decided that it would be more fun to write a program in Python, so here we are. This problem was the <a href="https://cemc.uwaterloo.ca/" target="_blank">Problem of the week from CEMC</a>. The specifics of the problem are as follows:</p>
+    <p><em>Adrian has a few favourite numbers. In order to help people understand, he created a list of all the criteria: 
+            <ul>
+              <li>Must have 5 digits</li>
+              <li>Must not have any even digits or repeated digits</li>
+              <li>1 000s digit must be greater than 10 000s digit and 100s digit</li>
+              <li>10s digit must be greater than 100s digit and unit digit</li>
+</em>
+
+  <h2 class="sub-header"> Approaching the problem</h2> <ul> <li>We know that this problem is asking us to go through every digit between 10 000 and 99 999, so that part should be simple. A <em>for</em> loop is what I’m using</li><li>There are 5 things we need to test for: <em> No even digits, no repeated digits, the 1 000s digit must be greater than the adjacent digits, as well as the same thing for the 10s digit.</em></li><li>Finally, we just need to use a <em>print()</em> statement to output the answer.</li>
+  <h2 class="sub-header">The Setup</h2><p>In programming, variables are essential for pretty much anything. You can imagine a variable as a box that holds a certain value. You can change the value inside the variable or you can use it for whatever purpose you want. For this program I had 2 variables outside of the for loop so that they didn’t reset for every number, favourites and numFavourites; favourites is a list that stores every one of Adrian’s favourite digits, while numFavourites stores the number of favourite numbers. Inside the loop I had 4 more variables: placeholder, we’ll get to its use later, digits, a list that will store all 5 digits of the number, numStr, the number converted to the string type (text), and isFavourite, a boolean (A true or false) that’s used to store whether or not a number is Adrian’s favourite.</p>
+  <h2 class="sub-header">Writing the <em>for</em>loop<h2>
+    <img src="image.png" alt="Flowchart representing the problem criteria">
+    
+    
+    
+    <div class="clear-float"></div>
+</div>
+
+
+<a href="https://kmitavarishna.github.io/blog/index.html" class="back-button">Back to Blog Index</a>
+
+</body>
+</html>
