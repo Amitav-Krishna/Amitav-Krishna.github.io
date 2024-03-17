@@ -96,13 +96,19 @@
   <h2 class="sub-header">The Setup</h2><p>In programming, variables are essential for pretty much anything. You can imagine a variable as a box that holds a certain value. You can change the value inside the variable or you can use it for whatever purpose you want. For this program I had 2 variables outside of the for loop so that they didn’t reset for every number, favourites and numFavourites; favourites is a list that stores every one of Adrian’s favourite digits, while numFavourites stores the number of favourite numbers. Inside the loop I had 4 more variables: placeholder, we’ll get to its use later, digits, a list that will store all 5 digits of the number, numStr, the number converted to the string type (text), and isFavourite, a boolean (A true or false) that’s used to store whether or not a number is Adrian’s favourite.</p>
   <h2 class="sub-header">Writing the <em>for</em> loop</h2><p>If you’ve been coding for (Ha!) any amount of time, you should be familiar with for loops. Basically we have a variable, usually i, and then every time the loop repeats i increases by 1, until i reaches a certain value. This was the setup for my for loop:
 	<em>for i in numStr:</em>
-In this for loop, it repeats for every digit inside numStr (The number we inputted). In each iteration of the loop, i takes on another one of numStr’s digits. This is what is inside the for loop: <br><code>digits.append(i)
-        if (int(digits[placeholder])) % 2 != 0 and isFavourite == True:
+In this for loop, it repeats for every digit inside numStr (The number we inputted). In each iteration of the loop, i takes on another one of numStr’s digits. This is what is inside the for loop: <br><code>digits.append(i)<br>
+           if (int(digits[placeholder])) % 2 != 0 and isFavourite == True:
             isFavourite = True
-        else:
+           else:
             isFavourite = False
-        placeholder += 1
-</code></p>
+           placeholder += 1
+</code>o first digits.append(i) basically adds the value of i to the list. This is useful because it allows us to individually reference each one of the digits. The if statement is used to check if the digit is even. What (int(digits[placeholder])) does is it takes an index placeholder (Basically looks for that value inside of digits; for lists the first value is index 0) and then converts it to an integer. What the modulus operator (%) does is it takes the remainder of a number (For example: 14 % 3 = 2). We can use this to our advantage because if the remainder of a number divided by 2 is equal to 0, we know that this number is even. The rest of the if statement checks to see if isFavourite is true so that we don’t accidentally do the test again if it fails once. The else statement is so that if it fails the test, we set isFavourite to False so it can’t do any of the other tests. Finally we add 1 to placeholder so that when we iterate through the list again we do the next value.
+
+</p>
+
+<h2 class="sub-header">Checking for repeating digits</h2><p>In python there is something called a set. A set is different from a list because a set is unordered and cannot have duplicates. We can use this to our advantage by creating a set with all of the same digits as our list:
+<code</p>
+	
     
     
 
