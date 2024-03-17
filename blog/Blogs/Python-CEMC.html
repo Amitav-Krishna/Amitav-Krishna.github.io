@@ -106,8 +106,12 @@ In this for loop, it repeats for every digit inside numStr (The number we inputt
 
 </p>
 
-<h2 class="sub-header">Checking for repeating digits</h2><p>In python there is something called a set. A set is different from a list because a set is unordered and cannot have duplicates. We can use this to our advantage by creating a set with all of the same digits as our list:
-<code</p>
+<h2 class="sub-header">Checking for repeating digits</h2><p>In python there is something called a set. A set is different from a list because a set is unordered and cannot have duplicates. We can use this to our advantage by creating a set with all of the same digits as our list:<br>
+<code> myset = set(digits)</code><br>Now we can compare the lengths of the set and the list in an if statement, and if it’s the same, we know there are no repeating digits:<br><code>if len(digits) == len(myset) and isFavourite == True:<br>
+        isFavourite = True<br>
+    else:<br>
+        isFavourite = False<br>
+	</code>We have to again make sure that isFavourite is true so that we don’t accidentally give the number a chance to redeem itself.</p>
 	
     
     
